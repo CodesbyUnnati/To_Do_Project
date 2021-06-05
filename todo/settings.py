@@ -26,7 +26,7 @@ SECRET_KEY = 'my^x-dcni4j@ik*%a$2++#f5t0ngh@e&)gm%-4hs1+b*em0lwr'
 #FOR HEROKU DEPLOYMENT
 DEBUG = False
 #FOR HEROKU DEPLOYMENT
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'todo-list-unnati.herokuapp.com']
 
 
 # Application definition
