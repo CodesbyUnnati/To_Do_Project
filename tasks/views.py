@@ -6,8 +6,9 @@ from .forms import *
 
 
 def index(request):
+    #saare task ko lae hai from DB  like(select * from task) in sql
     tasks = Task.objects.all()
-
+#form ka object
     form=TaskForm()
     
     if request.method=='POST':
@@ -16,6 +17,7 @@ def index(request):
             form.save()
         return redirect('/')
 
+     
     context = {'tasks':tasks,'form':form}
     return render(request,'tasks/list.html',context)
 
